@@ -1,11 +1,5 @@
-//
-//  Checklists
-//
-//  Created by Ashok Gelal on 4/22/12.
-//  Copyright (c) 2012 __MyCompanyName__. All rights reserved.
-//
-
 #import <UIKit/UIKit.h>
+#import "DatePickerViewController.h"
 @class ItemDetailViewController;
 @class ChecklistItem;
 
@@ -17,12 +11,15 @@
 
 @end
 
-@interface ItemDetailViewController : UITableViewController <UITextFieldDelegate>
+@interface ItemDetailViewController : UITableViewController <UITextFieldDelegate, DatePickerViewControllerDelegate>
 @property (strong, nonatomic) IBOutlet UITextField *textField;
 @property (strong, nonatomic) IBOutlet UIBarButtonItem *doneBarButton;
 @property (nonatomic, weak) id <ItemDetailViewControllerDelegate> delegate;
+@property (nonatomic, strong) IBOutlet UISwitch *switchControl;
+@property (nonatomic, strong) IBOutlet UILabel *dueDateLabel;
 
 @property (nonatomic, strong) ChecklistItem *itemToEdit;
 -(IBAction)cancel;
 -(IBAction)done;
+-(IBAction)switchChanged:(UISwitch *)sender;
 @end

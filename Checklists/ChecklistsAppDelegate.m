@@ -7,6 +7,19 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
+    /*
+    NSDate *date = [NSDate dateWithTimeIntervalSinceNow:10];
+    
+    UILocalNotification *localNotification = [[UILocalNotification alloc] init];
+    localNotification.fireDate = date;
+    localNotification.timeZone = [NSTimeZone defaultTimeZone];
+    localNotification.alertBody =@"I am a local notification";
+    localNotification.soundName = UILocalNotificationDefaultSoundName;
+    
+    [[UIApplication sharedApplication] scheduleLocalNotification:localNotification];
+     */
+    [self.window makeKeyAndVisible];
+     
     // Override point for customization after application launch.
     return YES;
 }
@@ -43,6 +56,11 @@
 - (void)applicationWillTerminate:(UIApplication *)application
 {
     [self saveData];
+}
+
+-(void) application:(UIApplication *)application didReceiveLocalNotification:(UILocalNotification *)notification
+{
+    NSLog(@"didReceiveLocalNotification %@", notification);
 }
 
 @end
