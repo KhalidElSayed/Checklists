@@ -48,6 +48,7 @@
 		CDA977C41548F1A300A3D575 /* Icon.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA977BD1548F1A300A3D575 /* Icon.png */; };
 		CDA977C51548F1A300A3D575 /* Icon@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = CDA977BE1548F1A300A3D575 /* Icon@2x.png */; };
 		CDA977C61548F1A300A3D575 /* iTunesArtwork in Resources */ = {isa = PBXBuildFile; fileRef = CDA977BF1548F1A300A3D575 /* iTunesArtwork */; };
+		CDA977C9154902AF00A3D575 /* DatePickerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDA977C8154902AF00A3D575 /* DatePickerViewController.m */; };
 		CDBB0B6E1546811F006C5E48 /* ListDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBB0B6D1546811F006C5E48 /* ListDetailViewController.m */; };
 		CDBC74451544E757006EAE4D /* ChecklistItem.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC74441544E757006EAE4D /* ChecklistItem.m */; };
 		CDBC7449154512C6006EAE4D /* ItemDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = CDBC7448154512C6006EAE4D /* ItemDetailViewController.m */; };
@@ -104,6 +105,8 @@
 		CDA977BD1548F1A300A3D575 /* Icon.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Icon.png; sourceTree = "<group>"; };
 		CDA977BE1548F1A300A3D575 /* Icon@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Icon@2x.png"; sourceTree = "<group>"; };
 		CDA977BF1548F1A300A3D575 /* iTunesArtwork */ = {isa = PBXFileReference; lastKnownFileType = file; path = iTunesArtwork; sourceTree = "<group>"; };
+		CDA977C7154902AF00A3D575 /* DatePickerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DatePickerViewController.h; sourceTree = "<group>"; };
+		CDA977C8154902AF00A3D575 /* DatePickerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DatePickerViewController.m; sourceTree = "<group>"; };
 		CDBB0B6C1546811F006C5E48 /* ListDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = ListDetailViewController.h; path = ../ListDetailViewController.h; sourceTree = "<group>"; };
 		CDBB0B6D1546811F006C5E48 /* ListDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = ListDetailViewController.m; path = ../ListDetailViewController.m; sourceTree = "<group>"; };
 		CDBC74431544E757006EAE4D /* ChecklistItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ChecklistItem.h; sourceTree = "<group>"; };
@@ -156,6 +159,8 @@
 		CD4491F41544D3DC002124C0 = {
 			isa = PBXGroup;
 			children = (
+				CDA977C7154902AF00A3D575 /* DatePickerViewController.h */,
+				CDA977C8154902AF00A3D575 /* DatePickerViewController.m */,
 				CDA977B81548F1A300A3D575 /* Icon */,
 				CDA977B21548F0D200A3D575 /* Launch Images */,
 				CD1A4F0C1548E24B00CC7835 /* Checklist Icons */,
@@ -346,6 +351,7 @@
 				CDBB0B6E1546811F006C5E48 /* ListDetailViewController.m in Sources */,
 				CD55A5C01547D55600603307 /* DataModel.m in Sources */,
 				CD1A4F371548E52100CC7835 /* IconPickerViewController.m in Sources */,
+				CDA977C9154902AF00A3D575 /* DatePickerViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
